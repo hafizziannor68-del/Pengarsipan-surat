@@ -1,0 +1,59 @@
+header h1 {
+    font-size: 20px;
+    color: #1B1B2F;
+}
+.wrap {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 20px 30px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+table, th, td {
+    border: 1px solid #ddd;
+}
+th, td {
+    padding: 8px 10px;
+    text-align: left;
+    font-size: 14px;
+}
+th {
+    background: #1B1B2F;
+    color: #fff;
+}
+tr:nth-child(even) {
+    background: #f9f9f9;
+}
+.btn {
+    display: inline-block;
+    padding: 8px 16px;
+    background: #378ADD;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+.btn-edit { background: #378ADD; padding: 4px 10px; font-size: 12px; }
+.btn-hapus { background: #E24B4A; padding: 4px 10px; font-size: 12px; }
+.form-box input, .form-box select, .form-box textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 6px 0 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+}
+.form-box label { font-weight: bold; font-size: 14px; }
+.form-box input[type="submit"] {
+    background: #1B1B2F;
+    color: #fff;
+    cursor: pointer;
+    width: auto;
+    padding: 10px 24px;
+}
+a.kembali { display: inline-block; margin-bottom: 14px; color: #1B1B2F; }

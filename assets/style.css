@@ -1,0 +1,193 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+    --latar:   #2b6bd3;
+    --biru:    #2160c8;
+    --biru-tua:#1a4fa8;
+    --muda:    #eef1f8;
+    --sorot:   #e3edfc;
+    --garis:   #d9dee8;
+    --teks:    #1a2030;
+    --redup:   #8890a4;
+    --merah:   #d93f3a;
+    --font:    'Inter', 'Segoe UI', Arial, sans-serif;
+}
+
+* { box-sizing: border-box; }
+ 
+body {
+    background: var(--latar);
+    color: var(--teks);
+    font-family: var(--font);
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 32px 40px 48px;
+}
+ 
+header h1 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0 0 20px 8px;
+}
+ 
+/* Panel putih besar */
+.wrap {
+    background: #ffffff;
+    border-radius: 36px;
+    padding: 30px 36px 34px;
+    overflow-x: auto;
+}
+ 
+/* Tabel: gaya daftar file, hanya garis mendatar */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 16px;
+}
+ 
+table, th, td {
+    border: none;
+}
+ 
+th, td {
+    padding: 12px 14px;
+    text-align: left;
+    font-size: 13px;
+    border-top: 1px solid var(--garis);
+}
+ 
+th {
+    background: transparent;
+    color: var(--redup);
+    font-size: 11px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    border-top: none;
+    padding-bottom: 10px;
+    white-space: nowrap;
+}
+ 
+tr:nth-child(even) { background: transparent; }
+ 
+tbody tr:last-child td { border-bottom: 1px solid var(--garis); }
+ 
+tbody tr:hover { background: var(--sorot); }
+ 
+/* Tombol: bentuk pil */
+.btn {
+    display: inline-block;
+    padding: 9px 20px;
+    background: var(--biru);
+    color: #fff;
+    border: none;
+    border-radius: 999px;
+    font-family: var(--font);
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    margin-bottom: 12px;
+}
+ 
+.btn:hover { background: var(--biru-tua); }
+ 
+.btn-edit {
+    background: var(--sorot);
+    color: var(--biru);
+    padding: 4px 14px;
+    font-size: 12px;
+    margin-bottom: 0;
+}
+ 
+.btn-edit:hover { background: var(--biru); color: #fff; }
+ 
+.btn-hapus {
+    background: #fdeceb;
+    color: var(--merah);
+    padding: 4px 14px;
+    font-size: 12px;
+    margin-bottom: 0;
+}
+ 
+.btn-hapus:hover { background: var(--merah); color: #fff; }
+ 
+/* Formulir: kolom isian lembut seperti kolom pencarian */
+.form-box label {
+    display: block;
+    font-weight: 600;
+    font-size: 13px;
+    color: var(--teks);
+}
+ 
+.form-box input,
+.form-box select,
+.form-box textarea {
+    width: 100%;
+    padding: 10px 16px;
+    margin: 6px 0 18px;
+    background: var(--muda);
+    border: 2px solid transparent;
+    border-radius: 14px;
+    font-family: var(--font);
+    font-size: 14px;
+    color: var(--teks);
+}
+ 
+.form-box textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+ 
+.form-box input:focus,
+.form-box select:focus,
+.form-box textarea:focus {
+    outline: none;
+    background: #fff;
+    border-color: var(--biru);
+}
+ 
+.form-box input[type="submit"] {
+    width: auto;
+    padding: 11px 30px;
+    margin: 4px 0 0;
+    background: var(--biru);
+    color: #fff;
+    border: none;
+    border-radius: 999px;
+    font-weight: 600;
+    cursor: pointer;
+}
+ 
+.form-box input[type="submit"]:hover { background: var(--biru-tua); }
+ 
+a.kembali {
+    display: inline-block;
+    margin-bottom: 18px;
+    color: var(--biru);
+    font-weight: 600;
+    text-decoration: none;
+}
+ 
+a.kembali:hover { text-decoration: underline; text-underline-offset: 4px; }
+ 
+/* Fokus keyboard tetap terlihat */
+a:focus-visible,
+.btn:focus-visible,
+.form-box input[type="submit"]:focus-visible {
+    outline: 3px solid var(--teks);
+    outline-offset: 2px;
+}
+ 
+/* Layar kecil */
+@media (max-width: 720px) {
+    body { padding: 16px 12px 36px; }
+    .wrap { border-radius: 24px; padding: 22px 18px; }
+    header h1 { font-size: 20px; }
+}
+ 
+
+
